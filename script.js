@@ -11,7 +11,7 @@ refs = {
   stopBtn: document.querySelector('[data-action="stop"]'),
   body:document.querySelector('body')
 }
-
+let timerId
 refs.startBtn.addEventListener('click', () => 
  {
   timerId = setInterval(changeBcgColor, 1000);
